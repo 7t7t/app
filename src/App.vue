@@ -3,10 +3,6 @@
     <img src="./assets/logo.png">
     <router-view></router-view>
     <div>
-      <group>
-        <cell is-link title="Simple" link="tabbar-simple"></cell>
-        <cell is-link title="Switch icons" link="tabbar-icon"></cell>
-      </group>
       <tabbar>
         <tabbar-item link="hello">
           <img slot="icon" src="./assets/demo/icon_nav_button.png">

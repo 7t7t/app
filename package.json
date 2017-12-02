@@ -17,6 +17,8 @@
     "vue-router": "^2.2.0"
   },
   "devDependencies": {
+    "parse5": "^3.0.3",
+    "cheerio": "^1.0.0-rc.2",
     "less": "^2.7.3",
     "vux": "^2.7.4",
     "vux-loader": "^1.1.27",
