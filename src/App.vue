@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view></router-view>
+    <router-view/>
     <div>
       <tabbar>
         <tabbar-item link="hello">
@@ -26,14 +26,12 @@
 </template>
 
 <script>
-import { Tabbar, TabbarItem, Group, Cell } from 'vux'
+import { Tabbar, TabbarItem } from 'vux'
 export default {
   name: 'app',
   components: {
     Tabbar,
-    TabbarItem,
-    Group,
-    Cell
+    TabbarItem
   }
 }
 </script>
@@ -46,5 +44,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 </style>
