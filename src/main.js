@@ -3,10 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import { AlertPlugin, ToastPlugin } from 'vux'
+import 'lib-flexible'
+// import { AlertPlugin, ToastPlugin } from 'vux'
 
-Vue.use(AlertPlugin)
-Vue.use(ToastPlugin)
+// Vue.use(AlertPlugin)
+// Vue.use(ToastPlugin)
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({

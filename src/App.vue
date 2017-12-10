@@ -1,12 +1,8 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view></router-view>
+    <router-view/>
     <div>
-      <group>
-        <cell is-link title="Simple" link="tabbar-simple"></cell>
-        <cell is-link title="Switch icons" link="tabbar-icon"></cell>
-      </group>
       <tabbar>
         <tabbar-item link="hello">
           <img slot="icon" src="./assets/demo/icon_nav_button.png">
@@ -30,14 +26,12 @@
 </template>
 
 <script>
-import { Tabbar, TabbarItem, Group, Cell } from 'vux'
+import { Tabbar, TabbarItem } from 'vux'
 export default {
   name: 'app',
   components: {
     Tabbar,
-    TabbarItem,
-    Group,
-    Cell
+    TabbarItem
   }
 }
 </script>
@@ -50,5 +44,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 </style>
